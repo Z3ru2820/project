@@ -1,0 +1,32 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1&display=swap');
+
+/* Google font */
+
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#nav ul li {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Start Footer */
+.footer_title a{
+    color: #fff;
+}
+.footer_title a:hover{
+    color: rgb(20, 146, 220);
+}
+.footer_logo i:hover{
+    color: rgb(21, 125, 237);
+}
+/* End Footer */

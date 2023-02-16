@@ -1,0 +1,219 @@
+
+
+body{
+    background-color:#101010;
+    overflow-x: hidden;
+}
+.nav_background {
+    height: 80px;
+}
+
+
+/* Start Banner */
+.profile_img{
+    width: 50%;
+    height: 550px;
+}
+
+.profile_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_me_title h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about_me_title p:nth-child(1){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about_me_title p:nth-of-type(2){
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about_me_title a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* End Banner */
+
+
+/* Start About Me */
+#about_skill{
+    position: relative;
+}
+#about_skill::before{
+    content: '';
+    
+    width: 50%;
+    height: 100%;
+    
+    z-index: -10;
+    position: absolute;
+    opacity: 0.3;
+    background-color: rgb(0, 0, 0);
+}
+/* End About Me */
+
+
+/* Start Last Projects */
+.project_title h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+.project_title p{
+    font-size: 20px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+.projects{
+    position: relative;
+    overflow: hidden;
+}
+
+.project_one::before{
+    content: 'Project_One';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    
+    transition: 1s;
+}
+.project_two::before{
+    content: 'Project_Two';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_three::before{
+    content: 'Project_Three';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_four::before{
+    content: 'Project_Four';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_five::before{
+    content: 'Project_Five';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_six::before{
+    content: 'Project_Six';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_seven::before{
+    content: 'Project_Seven';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_eight::before{
+    content: 'Project_Eight';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_one:hover::before,
+.project_two:hover::before,
+.project_three:hover::before,
+.project_four:hover::before,
+.project_five:hover::before,
+.project_six:hover::before,
+.project_seven:hover::before,
+.project_eight:hover::before
+{
+    
+    transform: translate(-50%, -50%) translateY(0%);
+}
+/* End Last Projects */

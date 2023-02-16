@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1&display=swap');
+
+
+.nav_background {
+    height: 80px;
+}
+
+/* Start Title */
+.blog_title {
+    background-color: #f4f4f4;
+}
+
+.blog_title p {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+/* End Title */
+
+/* Start Front Div */
+
+
+/* Start Bagan */
+.bagan_img {
+    position: relative;
+}
+
+.bagan_img::before {
+    content: "News";
+    width: 250px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+    bottom: 0;
+    left: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.bagan_img:hover::before {
+    color: rgb(25, 148, 225);
+}
+
+.bagan_title p:nth-child(1){
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+/* End Bagan */
+
+/* Start Yangon */
+
+.yangon_img {
+    position: relative;
+}
+
+.yangon_img::before {
+    content: "News";
+    width: 250px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+    bottom: 0;
+    left: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.yangon_img:hover::before {
+    color: rgb(25, 148, 225);
+}
+
+.yangon_title p:nth-child(1){
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+/* End Yangon */
+
+/* Start Inle */
+
+
+.inle_img {
+    position: relative;
+}
+
+.inle_img::before {
+    content: "News";
+    width: 250px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+    bottom: 0;
+    left: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.inle_img:hover::before {
+    color: rgb(25, 148, 225);
+}
+
+.inle_title p:nth-child(1){
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+
+
+/* End Inle */
+
+/* Start Shwedagon */
+
+.shwe_img {
+    position: relative;
+}
+
+.shwe_img::before {
+    content: "News";
+    width: 250px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+    bottom: 0;
+    left: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.shwe_img:hover::before {
+    color: rgb(25, 148, 225);
+}
+
+.shwe_title p:nth-child(1){
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+
+/* End Shwedagon */
+
+
+/* Start MaharMyatMuni */
+
+.muni_img {
+    position: relative;
+}
+
+.muni_img::before {
+    content: "News";
+    width: 250px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: underline;
+    bottom: 0;
+    left: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.muni_img:hover::before {
+    color: rgb(25, 148, 225);
+}
+
+.muni_title p:nth-child(1){
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+/* End MaharMyatMuni */
+
+/* End Front Div */
+
+/* Start Last Div */
+
+/* Start Search */
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.search-container i {
+    padding: 10px;
+    cursor: pointer;
+}
+.search-container input{
+    border-color:#000;
+}
+.search-container input:focus {
+    border-radius: 10px;
+    caret-color: #000;
+    color: #000;
+    outline: none;
+    border-color: #000;
+}
+
+/* End Search */
+
+/* Start Posts */
+
+.post_img{
+    width: 50px;
+    height: 50px;
+}
+
+.post_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts a{
+    font-size: 15px;
+    color: rgb(147, 8, 228);
+    opacity: 0.6;
+    cursor: pointer;
+    line-height: 50px;
+}
+.posts a:hover{
+    opacity: 1;
+}
+/* End Posts */
+
+/* End Last Div */

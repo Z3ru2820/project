@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1&display=swap');
+/* Start Banner */
+
+#banner{
+    width: 100%;
+    height: 120vh;
+    background:linear-gradient(45deg,rgba(255,255,255,0.4),rgba(255,255,255,0.2)),url(../img/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_title h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+.banner_title h3{
+    font-size: 18px;
+    font-family: 'Caveat', cursive;
+    color: rgb(64, 63, 63);
+}
+.banner_title div a{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* End Banner  */
+
+/* Start Portfolio */
+
+#portfolio{
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+}
+.portfolio_title h1{
+    font-size: 80px;
+    font-family: 'Caveat', cursive;
+}
+.portfolio_title p{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.portfolio_title a{
+    font-family: 'Kalam', cursive;
+}
+
+/* End Porfolio */
+
+/* Start Parallax  */
+
+#parallax{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(45deg,rgba(255,255,255,0.4),rgba(255,255,255,0.2)),url(../img/beach1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax_title h1{
+    font-size: 80px;
+}
+.parallax_title h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* End Parallax */
+
+/* Start Limitless Options */
+
+.option_div h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.option_div h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.option_div div a:hover{
+    color: #fff;
+    outline: none;
+}
+
+
+/* End Limitless Options */
+
+/* Start Last Projects */
+.project_title h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+.project_title p{
+    font-size: 20px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+.projects{
+    position: relative;
+    overflow: hidden;
+}
+
+.project_one::before{
+    content: 'Project_One';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    
+    transition: 1s;
+}
+.project_two::before{
+    content: 'Project_Two';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_three::before{
+    content: 'Project_Three';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_four::before{
+    content: 'Project_Four';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_five::before{
+    content: 'Project_Five';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_six::before{
+    content: 'Project_Six';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_seven::before{
+    content: 'Project_Seven';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_eight::before{
+    content: 'Project_Eight';
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15;
+
+    background-color: rgba(0,0,0,0.2); 
+    z-index: 10; 
+    transition: 1s;
+}
+.project_one:hover::before,
+.project_two:hover::before,
+.project_three:hover::before,
+.project_four:hover::before,
+.project_five:hover::before,
+.project_six:hover::before,
+.project_seven:hover::before,
+.project_eight:hover::before
+{
+    
+    transform: translate(-50%, -50%) translateY(0%);
+}
+/* End Last Projects */
+
+/* Start Customer Say */
+
+#customer_say{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(../img/beach4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#customer_say h1{
+    background-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.customer_profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.customer_profile img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* End Customer Say */
+
+
+/* Start Clients */
+
+.client_logo div{
+    height: 100px;
+}
+.client_logo div i{
+    font-size: 80px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.client_logo div i:hover{
+    opacity: 1;
+}
+.client_logo .html5_i i:hover{
+    color: orangered;   
+}
+.client_logo .css3_i i:hover{
+    color: rgb(30, 158, 208);
+}
+.client_logo .javascript_i i:hover{
+    color: rgb(215, 215, 92);
+}
+.client_logo .bootstrap_i i:hover{
+    color: rgb(106, 23, 215);
+}
+/* End Clients */
+
+
+/* Start Contact */
+.contact_div{
+    width: 85%;
+    background-color: #f4f4f4;
+}
+
+.contact_title p{
+    font-size: 75px;
+}
+.contact_a a{
+    padding: 25px 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* End Contact */
+
+
+@media (max-width:768px) {
+    .banner_title h1{
+        font-size: 40px;
+    }
+    .banner_title h3{
+        font-size: 12px;
+    }
+    .banner_title div a{
+        font-size: 10px;
+    }
+    .seo_img{
+        width:90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .seo_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .parallax_title h1{
+        font-size: 40px;
+    }
+    .parallax_title h3{
+        font-size: 15px;
+    }
+    .parallax_title div a{
+        font-size: 10px;
+    }
+    .contact_title p{
+        font-size: 35px;
+    }
+    .contact_title span{
+        font-size: 10px;
+    }
+    .contact_a a{
+        padding: 10px 20px;
+    }
+}
