@@ -20,13 +20,25 @@
     font-family: 'Courier New', Courier, monospace;
 }
 /* Start Footer */
-.footer_title a{
-    color: #fff;
+footer div div p a{
+    color: white;
 }
-.footer_title a:hover{
-    color: rgb(20, 146, 220);
+footer div div p a:hover{
+    color: rgb(0, 166, 231);
 }
-.footer_logo i:hover{
-    color: rgb(21, 125, 237);
+.footer_icons i:hover{
+    cursor: pointer;
+    color: rgb(24, 94, 224);
+}
+@media (max-width:576px){
+    .footer_titles{
+        font-size: 10px;
+    }
+    .footer_icons i{
+        font-size: 10px;
+    }
 }
 /* End Footer */
+
+
+

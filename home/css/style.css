@@ -116,7 +116,9 @@
     position: relative;
     overflow: hidden;
 }
-
+.project_img{
+    cursor: pointer;
+}
 .project_one::before{
     content: 'Project_One';
     
