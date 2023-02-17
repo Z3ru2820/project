@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeru Desktop and Phone Accessories</title>
+
+    <!--bootstrap css1 js-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawesome css1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="img/png" href="https://fv9-6.failiem.lv/thumb_show.php?i=mcdtduvj2&view">
+
+    <style type="text/css">
+    	
+        .banners{
+
+            height:  100vh;
+
+            overflow: hidden;
+
+            animation: myani 5s  linear forwards;
+        }
+        .banneritems{
+            animation: mybanners 0.8s  linear;
+        }
+        .navbarphonemargin{
+            margin-left: 150px;
+        }
+        #navbar{
+            position:fixed;
+            top:0;
+            width: 100%;
+            transition:top 0.5s;
+            z-index: 4;
+        }
+        @keyframes mybanners{
+            0%{
+                transform: translateY(100px);
+                opacity:0;
+            }
+            100%{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes myani{
+                0%{
+                    background:rgba(0, 0, 0, 0.6);
+                }
+                100%{
+                    background:rgba(0, 0, 0, 0.9);
+                }
+        }
+        .empty{
+            width: 100%;
+            height: 100px;
+            animation: myani 5s  linear forwards;
+            z-index: -4;
+        }
+        #desktopsetup1Img{
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #desktopsetup1Img:hover{
+            opacity: 0.7;
+        }
+        #desktopsetup2Img{
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #desktopsetup2Img:hover{
+            opacity: 0.7;
+        }
+        #desktopsetup3Img{
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #desktopsetup3Img:hover{
+            opacity: 0.7;
+        }
+        #desktop{
+            overflow: hidden;
+        }
+        .reveal{
+            position: relative;
+            transform: translateX(-120px);
+            opacity: 0;
+            transition: 1s all ease ;
+        }
+
+        .reveal.active{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .reveal1{
+            position: relative;
+            transform: translateX(120px);
+            opacity: 0;
+            transition: 1s all ease ;
+        }
+
+        .reveal1.active{
+            transform: translateX(0);
+            opacity: 1;
+        }
+		
+        .setupmodal{
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 300px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        .modal-title{
+            font-size: 30px;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-card{
+            margin: auto;
+            display: block;
+            animation: zoom 0.2s linear;
+        }
+        .modal-card p{
+            font-size: 25px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .modal-card a{
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .modal-content{  
+            animation: zoom 0.4s linear;
+        }
+        .close {
+            position: absolute;
+            top: 90px;
+            right: 35px;
+            color: #ffffff;
+            font-size:50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        @keyframes zoom {
+            from {transform: scale(0.1)} 
+            to {transform: scale(1)}
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .cardlink{
+            display: flex;
+            justify-content: space-between;
+        }
+        .card-link{
+            text-decoration:none;
+            color:#fff;
+            padding: 5px 8px;
+            background:silver;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .pa-p p{
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .pa{
+            text-decoration: none;
+            color: #000;
+            transition: 0.5s;
+            outline: none;
+        }
+        .pa:hover p{
+            color:rgba(0, 0, 0, 0.7);
+        }
+        .pa:hover{
+            transform: scale(1.2);
+        }
+        .pa-a a{
+            font-size: 12px;
+            text-decoration: none;
+            padding: 3px 5px;
+            background: grey;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .pa-a a:hover{
+            background:rgba(0, 0, 0,0.9);
+        }
+        .txtforcus{
+            font-size: 12px;
+        }
+        /*.da{
+            text-decoration: none;
+            color: #000;
+        }
+        .da:hover p{
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .da img{
+            width: 350px;
+            height: 280px;
+            object-fit: contain;
+        }*/
+        .maps{
+            width: 100%;
+            height:40vh;
+        }
+        .ani{
+            border-radius: 10px;
+            cursor: pointer;
+            transition:0.8s;
+            outline: none;
+        }
+        .imgani{
+            border-radius: 10px;
+        }
+        .phoneno,.mailto{
+            text-decoration: none;
+            color:#000;
+        }
+        .phoneno:hover{
+            color: skyblue;
+        }
+
+        .mailto:hover{
+            color:skyblue;
+        }
+        #phoneaccessoriesmodal1,
+        #phoneaccessoriesmodal2,
+        #phoneaccessoriesmodal3,
+        #phoneaccessoriesmodal4,
+        #phoneaccessoriesmodal5,
+        #phoneaccessoriesmodal6,
+        #phoneaccessoriesmodal7,
+        #phoneaccessoriesmodal8{
+        	
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.6);
+        }
+        #desktopaccessoriesmodal1{
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .addnum{
+            width: 25px;
+        }
+        .pa-img img:hover{
+            opacity: 0.7;
+        }
+        .review{
+            text-decoration: none;
+            color: black;
+        }
+        .review:hover{
+            color:#000;
+            font-weight: bold;
+        }
+        .bannerimgs{
+            width: 500px;
+            height: 450px;
+            display: flex;
+            justify-content:space-around;
+            flex-direction: column;
+            z-index: 1;
+        }
+        .imgforbanner{
+            width: 800px;
+            height: 650px;
+            object-fit:contain;
+        }
+        
+        .bannerimgsa{
+            transform:translateX(400px);
+        }
+        @media screen and (max-width: 900px) and (min-width:200px){
+            .navbar-nav{
+                display: none;
+            }
+            .bannerimgs{
+                transform: translateX(-70px) translateY(-30px);
+            }
+            .imgforbanner{
+                width:500px;
+                height:500px;
+                transform: scale(0.9);
+            }
+            .bannerimgsa{
+                display: inline;
+                transform:translate(140px,-60px);
+            }
+        }
+        
+
+        /*form style*/
+
+       
+        .form{
+            position: relative;
+            width: 17rem;
+            height: 3rem;
+            margin: 0 auto;
+        }
+        .forminput{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 0.3rem;
+            font-family: inherit;
+            font-size:1.2rem;
+            color:#000;
+            outline: none;
+            padding: 1.25rem;
+            background: transparent;
+        }
+        .forminput:hover {
+            border-color:#17a2b8;
+        }
+
+         /*Change border when input focus*/
+
+        .forminput:focus {
+            border-color:#007bff;
+        }
+
+        .formlabel{
+            position: absolute;
+            left: 1rem;
+            top: 0.8rem;
+            padding: 0 0.5rem;
+            color:#17a2b8;
+            font-weight: bold;
+            cursor: text;
+            transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+            background-color:#fff;
+        }
+        .forminput:focus ~ .formlabel,
+        .forminput:not(:placeholder-shown).forminput:not(:focus) ~ .formlabel{
+            top: -0.5rem;
+            font-size: 0.8rem;
+            left: 0.8rem;
+            color: #fff;
+        }
+		
+        .modal-body{
+            background:#fff;
+        }
+
+
+        /*desktop accessories*/
+
+        .das{
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px -2px 2px silver;
+        }
+        .da{
+            width:100%;
+            height: 100%;
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .da:hover{
+            color: #000;
+            text-shadow: 1px 1px 1px grey;
+        }
+        .da img{
+            width: 250px;
+            height:250px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        #buynow{
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.6);
+        }
+        .bns{
+            height: 750px;
+            background:rgba(255,255,255,0.5);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .bns::before{
+            content: 'LOGITECH';
+            position: absolute;
+            top: 10%;
+            left: 0;
+            font-size: 5em;
+            font-weight: 800;
+            font-style: italic;
+            color: rgba(255, 255, 255,0.09);
+        }
+        .bnis{
+            position: absolute;
+            top: 10%;
+            transform: translateY(-30%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+        }
+        .bnbs{
+            position: absolute;
+            bottom: 150px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transition: 1s;
+            z-index: 10;
+            background-color: transparent;
+        }
+        .bnbs p{
+            color: #fff;
+            font-size: 23px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-shadow: 10px 10px 8px black;
+        }
+        .shipping{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+            transition: 0.5s;
+        }
+        .shipping h6{
+            padding: 2px 5px;
+            background: transparent;
+            border-radius: 10px;
+            margin:0 3px;
+        }
+        .shipdiv{
+            width: 200px;
+            height: 40px;
+            display: flex;
+        }
+        .shipping #land[type='radio']::before{
+            content: 'LAND';
+            width: 50px ;
+            height: 30px;
+            border-radius: 5px;
+            padding: 3px 5px;
+            position: relative;
+            background-color: white;
+            top: 8px;
+            left: 0;
+        }
+        .shipping #land[type='radio']:checked::before{
+            border-radius: 7px;
+            border:2px solid white;
+            font-weight: 400;
+            background-color:royalblue;
+            color: white;
+        }
+        .shipping #air[type='radio']::before{
+            content: 'AIR';
+            width: 50px ;
+            height: 30px;
+            border-radius: 5px;
+            padding: 3px 5px;
+            position: relative;
+            background-color: white;
+            top: 8px;
+            left: 50px;
+        }
+        .shipping #air[type='radio']:checked::before{
+            border-radius: 7px;
+            border:2px solid white;
+            font-weight: 400;
+            background-color: royalblue;
+            color: white;
+        }
+        .shipping #sea[type='radio']::before{
+            content: 'SEA';
+            width: 50px ;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 3px 5px;
+            position: relative;
+            background-color: white;
+            top: 8px;
+            left: 85px;
+        }
+        .shipping #sea[type='radio']:checked::before{
+            border-radius: 7px;
+            background-color:royalblue;
+            border:2px solid white;
+            font-weight: 400;
+            color: white;
+        }
+        .color{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+        }
+        .color h6{
+            background: transparent;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .color .cl{
+            margin: 0 15px 8px 0;
+        }
+        .cl:nth-child(2)::before{
+            content: '';
+            background: black;
+            position: absolute;
+            z-index: 100;
+            width: 16px;
+            height: 16px;
+            transform:translateX(1px);
+            border-radius: 50%;
+        }
+        .color input[type='radio']::after {
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: white;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid grey;
+        }
+        .color input[type='radio']:checked::after{
+            width: 20px;
+            height: 20px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid royalblue;
+        }
+        .sbns{
+            display: inline-block;
+            text-decoration: none;
+            padding: 5px;
+            background:#fff;
+            border-radius: 4px;
+            margin-top: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #111;
+        }
+        #desktopaccessories{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+	
+
+    <!-- Start Header Section -->
+    <header id="head">
+		
+        <!-- Start navbar -->
+        <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="navbar">
+
+                <a href="index.html" class="navbar-brand mx-2">
+
+                    <img src="https://fv9-6.failiem.lv/thumb_show.php?i=mcdtduvj2&view" width="50px" alt="sitelogo" class="logoimg" />
+
+                    <span><span class="text-info">Zeru</span> Desktop & Phone Accessories</span>
+
+                </a>
+
+            <div id="nav" class="navbar-collapse justify-content-end mx-5">
+
+
+                <ul class="navbar-nav px-3">
+
+                    <li class="nav-item px-2">
+
+                        <a href="#head" class="nav-link text-uppercase fw-bold text-light">Home</a>
+
+                    </li>
+
+                    <li class="dropdown nav-item px-2">
+
+                        <a href="#Desktop" class="nav-link text-uppercase fw-bold text-light dropdown-toggle" data-bs-toggle="dropdown">Desktop</a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#desktop" class="dropdown-item text-uppercase">Setup</a></li>
+                            <li><a href="#desktopaccessories" class="dropdown-item text-uppercase">Accessories</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item px-2">
+
+                        <a href="#phoneaccessoriessection" class="nav-link text-uppercase fw-bold text-light">Phone</a>
+					
+                    </li>
+					
+                    <li class="nav-item px-2">
+					
+                        <a href="#contact" class="nav-link text-uppercase fw-bold text-light">Contact</a>
+					
+                    </li>
+				
+                </ul>
+			
+            </div>
+
+        </nav> -->
+        <!-- End navbar -->
+
+        <!-- Start Navbar Section -->
+        <nav class="navbar navbar-expand-md navbar-light bg-dark d-flex justify-content-between user-select-none fixed-top"
+            id="navbar">
+            <a href="#" class="mx-5 p-2 d-flex justify-content-between w-0 text-decoration-none align-items-center"><i
+                    class="fa-solid fa-gears text-white mx-2">
+                    <p class="text-white">Zeru</p>
+                </i></a>
+
+            <button type="button" class=" btn navbar-toggler mx-4 bg-white" data-bs-toggle="collapse" data-bs-target="#nav"> <i
+                    class="navbar-toggler-icon"></i></button>
+
+
+            <div class="navbar-collapse collapse justify-content-end" id="nav">
+
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../blog/index.html" class="nav-link text-white">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../portfolio/index.html" class="nav-link  text-white">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../shop/index.html" class="nav-link text-white fw-bolder">Shop</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- End Navbar Section -->
+        <div class="empty">
+		
+        </div>
+
+        <!-- Start banner -->
+        <section >
+
+            <div class="container-fluid">
+				
+                <div class="row justify-content-center align-items-center banners">
+					
+                    <div class="col-md-5 col-sm-10 banneritems">
+						
+                        <h2 class="text-capitalize display-1"><span class="fw-bold text-info">ZERU </span><br/><span class="text-light">Desktop & Phone Accessories :</span></h2>
+                        <h2 class="text-light fst-italic fw-light">We do our best to make sure that the products are of the highest quality and reliable.</h2>
+                        <p class="text-secondary lead">Essentials that pair perfectly with your favorite devices.</p>
+
+                        <a href="#" class="btn text-secondary btn-outline-light btn-lg rounded-2 px-4 mt-3" data-bs-toggle="modal" data-bs-target="#loginmodal">Get In Touch</a>
+
+                    </div>
+                    <div class="col-md-5 col-sm-7">
+						
+                        <div class="mx-auto">
+                            <div class="bannerimgs">
+                                <img src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-x/pro-headset-gallery-1.png" class="imgforbanner" />
+                                <div class="text-center bannerimgsa">
+                                    <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#buynow">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+			
+
+        </section>
+        <!-- End banner -->
+
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Desktop Section -->
+    <section id="desktop">
+        <!-- Start title -->
+        <div class="col-12 text-center bg-dark" >
+
+            <h1 class="text-light display-1 p-4">Desktop Setups</h1>
+            <p class="text-light lead mb-5">We make the best choices for you and make sure you make the necessary adjustments</p>
+
+        </div>
+        <!-- End title -->
+				
+        <!-- Start desktopsetup -->
+        <div class="container-fluid">
+
+                    <!--start first setup -->
+                        <div class="row mb-5">
+
+                            <div class="desktopsetupfp col-md-5 col-sm-12 mb-4">
+								
+                                <div>
+								
+                                    <div class="text-center">
+								
+                                        <h4 class="card-title ">Desktop Setup 1</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">For Gaming</h6>
+								
+                                    </div>
+                        		
+                                    <div class="mx-3 reveal">
+                        		
+                                        <p>CPU - Core i5 10400F 10th Gen (2.90GHz-4.30GHz, 12MB Cache, 6 Cores, 12 Threads)</p>
+                                        <p>CPU Fan - Segotep RGB four copper tube radiator</p>
+                                        <p>Motherboard - Asus B560M-T (Intel B560 Chip)</p>
+                                        <p>Graphic Card - ASUS TUF Gaming GeForce® GTX 1650 OC Edition 4GB GDDR6, (OC Mode - 1680 MHz (Boost Clock), Gaming Mode (Default) - GPU Boost Clock : 1650 MHz , GPU Base Clock : 1410 MHz</p>
+                                        <p>Storage Device - Colorful CN600 256GB M.2 NVME</p>
+                                        <p>RAM - Colourful 16GB DDR4 3200MHz</p>
+                                        <p>Chassis - KOTIN GANK3 RGB Version White (Chassis without fan by default, If you want to add, please contact customer service)</p>
+                                        <p>Power Supply - 600W Golden Field (Safety Regulation 3C, Stable power supply)</p>
+                                        <p>Warranty - Three-Years Parts and Service Warranty.</p>
+                                        <p>Total for System Unit - <span class="fw-bold text-dark">1,499,000 Ks</span></p>
+                                        <p>Please contact customer service if you want to change the configuration.</p>
+                        		
+                                    </div>
+                        		
+                                    <div class="text-center cardlink">
+                        		
+                                        <a href="#" class="card-link mx-5">To Order</a>
+                                        <a href="#" class="card-link mx-5">Contact</a>
+                        		
+                                    </div>
+								
+                                </div>
+							
+                            </div>
+							
+                            <div class="desktopsetupfimg col-md-5 col-sm-12 mx-auto mb-4 d-flex justify-content-center align-items-center">
+							
+                                <div class="setupfimg d-flex justify-content-center align-items-center">
+							
+                                    <img src="https://fv9-3.failiem.lv/thumb_show.php?i=j6tnxx26k&view" class="img-thumbnail" id="desktopsetup1Img">
+							
+                                </div>
+							
+                            </div>
+						
+                        </div>
+						
+                        <!-- end first setup -->
+						
+                        <hr/>
+						
+                        <!-- start second setup -->
+						
+                        <div class="row mt-5">
+						
+                            <div class="desktopsetupsimg col-md-5 col-sm-12 mx-auto mb-4 d-flex justify-content-center align-items-center">
+						
+                                <div class="setupsimg d-flex justify-content-center align-items-center">
+						
+                                    <img src="https://fv9-6.failiem.lv/thumb_show.php?i=rq8ahmzse&view" class="img-thumbnail" id="desktopsetup2Img">
+						
+                                </div>
+						
+                            </div>
+						
+                            <div class="desktopsetupsp col-md-5 col-sm-12 mb-4">
+						
+                                <div>
+						
+                                    <div class="text-center">
+						
+                                        <h4 class="card-title">Desktop Setup 2</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">For Gaming</h6>
+						
+                                    </div>
+                        
+                                    <div class="mx-3 reveal1">
+                        
+                                        <p>CPU - Core i5 12400F 12th Gen (2.5GHz up to 4.4GHz, 18 MB Cache, 6 Cores, 12 Threads)</p>
+                                        <p>CPU Fan - Golden Field RGB six copper tube radiator</p>
+                                        <p>Motherboard - Colorful B660M-HD Deluxe V20 (Intel B560 Chip)</p>
+                                        <p>Graphics Card - ASUS GeForce GTX 1660 GDDR5 6GB SI OC edition</p>
+                                        <p>Storage Device - Western Digital SN750SE 500GB PCIE4.0 M.2 NVME</p>
+                                        <p>RAM - Colourful/Team/Micron-Crucial 16GB DDR4 3200MHz</p>
+                                        <p>Chassis - KOTIN GANK3 RGB Version Black (Chassis without fan by default, If you want to add, please contact customer service)</p>
+                                        <p>Power Supply - 600W SAMA (Safety Regulation 3C, Stable power supply)</p>
+                                        <p>Warranty - Three-Years Parts and Service Warranty.</p>
+                                        <p>Total for System Unit - <span class="fw-bold">1,799,000 Ks</span></p>
+                                        <p>Please contact customer service if you want to change the configuration.</p>
+                        
+                                    </div>
+                        
+                                    <div class="text-center cardlink">
+                        
+                                        <a href="#" class="card-link mx-5">To Order</a>
+                                        <a href="#" class="card-link mx-5">Contact</a>
+                        
+                                    </div>
+						
+                                </div>
+						
+                            </div>
+						
+                        </div>
+						
+                        <!-- end second setup -->
+						
+                        <hr/>
+						
+                        <!-- start third setup -->
+                        <div class="row mt-5">
+						
+                            <div class="desktopsetuptp col-md-5 col-sm-12 mb-4">
+						
+                                <div>
+						
+                                    <div class="text-center">
+						
+                                        <h4 class="card-title ">Desktop Setup 3</h4>
+                                        <h6 class="card-subtitle mb-2 text-muted">For Gaming</h6>
+						
+                                    </div>
+                        
+                                    <div class="mx-3 reveal">
+                        
+                                        <p>CPU - Core i5 12400F 12th Gen (2.5GHz up to 4.4GHz, 18 MB Cache, 6 Cores, 12 Threads)</p>
+                                        <p>CPU Fan - Razer 120 RGB Liquid Cooling</p>
+                                        <p>Motherboard - Colorful Battle-AX B660M-HD Deluxe V20 HS (Intel B660 Chip)</p>
+                                        <p>Graphic Card - Colourful GeForce RTX 3060 12GB GDDR6 (Base:1320Mhz; Boost:1777Mhz) CUDA Cores: 3584</p>
+                                        <p>Storage Device - Western Digital SN750SE 500GB PCIE4.0 M.2 NVME</p>
+                                        <p>RAM - Colourful 16GB DDR4 3200MHz</p>
+                                        <p>Chassis - MSI Bubalus Gaming Chassis Black (Chassis without fan by default, If you want to add, please contact customer service)</p>
+                                        <p>Power Supply - Segotep AN650 650W 80+ White</p>
+                                        <p>Warranty - Three-Years Parts and Service Warranty.</p>
+                                        <p>Total for System Unit - <span class="fw-bold">2,399,000 Ks</span></p>
+                                        <p>Please contact customer service if you want to change the configuration.</p>
+                        
+                                    </div>
+                        
+                                    <div class="text-center cardlink">
+                        
+                                        <a href="#" class="card-link mx-5">To Order</a>
+                                        <a href="#" class="card-link mx-5">Contact</a>
+                        
+                                    </div>
+						
+                                </div>
+						
+                            </div>
+						
+                            <div class="desktopsetup3img col-md-5 col-sm-12 mx-auto mb-4 d-flex justify-content-center align-items-center">
+						
+                                <div class="setup3img d-flex justify-content-center align-items-center">
+						
+                                    <img src="https://fv9-4.failiem.lv/thumb_show.php?i=5aujqekax&view" class="img-thumbnail" id="desktopsetup3Img">
+						
+                                </div>
+						
+                            </div>
+						
+                        </div>
+						
+                        <!-- end third setup -->
+        </div>
+
+        <div class="text-center txtforcus fst-italic fw-bold mt-3">
+		
+            <p>Contact us to find out the brand and spec you want, CPU, Motherboard, RAM, HDD, Monitor, etc. Components you want for your Gaming PC.</p>
+		
+        </div>
+		
+        <!-- End Desktopsetup -->
+
+                <hr />
+
+        <!-- Start Desktop Accessories  -->
+
+        <div class="container-fluid">
+            <div class="text-center desktopaccessoriesheader my-5">
+                <h2 class="display-3 fst-italic text-uppercase fw-bolder">Desktop Accessories</h2>
+                <pre class="fst-italic">Find what you need . We are selling at a reasonable price.</pre>
+            </div>
+			
+            <div class="row col-12 d-flex justify-content-center mt-5" id="desktopaccessories">
+				
+                <div class="col-lg-4 col-md-4 col-sm-10 mx-5 mb-3 img-thumbnail das">
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-2.failiem.lv/thumb_show.php?i=yvv8jvzyu&view" width="250px" height="100px"  />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">AOC 27G2 165Hz (27inches)</p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 mb-3 mx-5 img-thumbnail das">
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=ur92atq5m&view" width="250px" height="100px"  />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">Mechanical Gaming Keyboard - Razer BlackWidow</p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 mb-3 mx-5 img-thumbnail das">
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-1.failiem.lv/thumb_show.php?i=jgph7m6xd&view" width="250px" height="100px"  />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">Razer Viper Ultimate Lightest Wireless Gaming Mouse & RGB Charging Dock</p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 mb-3 mx-5 img-thumbnail das">
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-6.failiem.lv/thumb_show.php?i=cdqwftnga&view" width="250px" height="100px" />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">Razer Kraken -Green </p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 mb-3 mx-5 img-thumbnail das" >
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=n29yy42p3&view" width="250px" height="100px"  />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">Prolink (2000VA) UPS</p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+		
+                <div class="col-lg-4 col-md-4 col-sm-10 mb-3 mx-5 img-thumbnail das">
+		
+                    <a href="#" class="da" data-bs-toggle="modal" data-bs-target="#desktopaccessoriesmodal1">
+		
+                        <div class="da-img d-flex justify-content-center align-items-center mb-3">
+		
+                            <img src="https://fv9-6.failiem.lv/thumb_show.php?i=3u5waj45x&view" width="250px" height="100px"  />
+		
+                        </div>
+		
+                        <div class="da-p">	
+		
+                            <p class="text-center">Corsair 4000D AIRFLOW White Gaming Casing</p> 
+		
+                        </div>
+		
+                    </a>
+		
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- End Desktop Accessories -->
+
+    </section>
+
+
+    <!-- End Desktop Section -->
+
+    <hr/>
+
+    <!-- Start Phone Accessories -->
+
+    <section class="mt-5" id="phoneaccessoriessection">
+
+        <!-- Start title -->
+
+        <div class="text-center text-light bg-dark pa-t mb-5" >
+
+            <h6>Phone Accessories Collections</h6>
+
+        </div>
+
+        <!-- End title -->
+		
+        <div class="container-fluid">
+			
+            <div class="row d-flex justify-content-center align-items-center phoneaccessories">
+				
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal1"  >
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=rx9br8e6p&view" width="200px" height="100px" class="img-thumbnail imgani" alt="laptopstand" />
+
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">4,600 Ks</h5>
+
+                            <p class="text-center">Laptop Stand Phone Stand Phone Holder with Retractable Bracket...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal2">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=58kp8zjck&view" width="200px" height="100px" class="img-thumbnail imgani" alt="iphonecover" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">39,500 Ks</h5>
+
+                            <p class="text-center">SPIGEN IPH 13 6.1 INCHES ULTRA HYBRID SERIES PHONE CASE FOR...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal3">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-5.failiem.lv/thumb_show.php?i=es65u568m&view" width="200px" height="100px" class="img-thumbnail imgani" alt="hococharger" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">18,000 Ks</h5>
+
+                            <p class="text-center">Hoco DC18 High charging speed 3.0A - PD- QC30-20W,compatible with...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal4">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=jd923h5mz&view" width="200px" height="100px" class="img-thumbnail imgani" alt="ankerchanger" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">43,700 Ks</h5>
+
+                            <p class="text-center">Anker Powerline+ Lighting Cable</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal5">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-6.failiem.lv/thumb_show.php?i=hbwaq5yku&view" width="200px" height="100px" class="img-thumbnail imgani" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">17,500 Ks</h5>
+
+                            <p class="text-center">Remax RU-S2 Plug Ming Series 4 USB Ports Charger Socket for Mobile...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal6">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-3.failiem.lv/thumb_show.php?i=3r7ybf5p3&view" width="200px" height="100px" class="img-thumbnail imgani" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">3,500 Ks</h5>
+
+                            <p class="text-center">REMAX Iphone 12 6.1"INCHES RM-1688 CRYSTAL SERIES TPU PHONE CASE FOR IPhone 12...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal7">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-5.failiem.lv/thumb_show.php?i=xbgpjegj4&view" width="200px" height="100px" class="img-thumbnail imgani" />
+
+                        </div>
+
+                        <div class="pa-p">
+
+                            <h5 class="text-info mx-3">21,000 Ks</h5>
+
+                            <p class="text-center">GADGET MAX 10000mAh NEW RAY POWER BANK 10000mAh(5V/2.1A)(OUTPUT-2USB/INPUT...</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 ani">
+
+                    <a href="#" class="pa" data-bs-toggle="modal" data-bs-target="#phoneaccessoriesmodal8">
+
+                        <div class="pa-img d-flex justify-content-center align-items-center mb-3">
+
+                            <img src="https://fv9-2.failiem.lv/thumb_show.php?i=2z49n5tcg&view" width="200px
+                            " height="100px" class="img-thumbnail imgani" />
+						
+                        </div>
+						
+                        <div class="pa-p">
+						
+                            <h5 class="text-info mx-3">53,500 Ks</h5>
+						
+                            <p class="text-center">REMAX RPP-112 30000mAh MENGINE SERIES POWER BANK(Output 4USB/Input-Micro,TypeC,...</p>
+						
+                        </div>
+			
+                    </a>
+			
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-end">
+
+            <button type="submit" class="btn btn-outline-light bg-secondary mx-5">See More...</button>
+
+        </div>
+
+    </section>
+
+    <!-- End Phone Accessories -->
+
+    <hr/>
+
+    <!-- Start Contact -->
+
+    <section id="contact">
+
+        <div class="container-fluid">
+
+            <!-- Start title -->
+            <div class="col-12 text-center">
+
+                <h1 class="text-info display-3">Contact Us</h1>
+                <p class="lead">We sell a variety of devices at the lowest possible prices</p>
+
+            </div>
+
+            <!-- End title -->
+
+             <div class="row">
+
+                <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <h5>Office Location</h5>
+
+                        </div>
+
+                        <div class="card-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.448632207526!2d96.0786701148708!3d21.9557382855036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d4656b04d19%3A0x42992fc77e74cc56!2s44th%20St%2C%20Mandalay!5e0!3m2!1sen!2smm!4v1655113074105!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="card-footer">
+                            <p>Phone : <a href="tel:+959761609595" class="phoneno">09761609595</a></p>
+                            <p>Email : <a href="mailto:info@zeru.com" class="mailto">info@zeru.com</a></p>
+                            <p>No.20,44x81st,Mandalay,Myanmar</p>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+
+                <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mt-5">
+
+                    <div class="text-center">
+                        <h3>Got Questions ?</h3>
+                        <p class="text-muted">Stay Connected</p>
+                    </div>
+
+                    <form action="" method="">
+
+                        <div class="col-md-12 form-group mb-3">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control form-control-sm rounded-1" placeholder="Enter your name" />
+                        </div>
+
+                        <div class="col-md-12 form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control form-control-sm rounded-1" placeholder="Enter your email" />
+                        </div>
+
+                        <div class="col-md-12 form-group mb-3">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="form-control form-control-sm rounded-1" rows="3" placeholder="Enter your message here"></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-info rounded-1">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Contact -->
+    <hr/>
+
+    <!-- Start Footer -->
+        <div class="text-center fst-italic fw-light">
+            <p>We guarantee that you will be satisfied.</p>
+        </div>
+        <footer class="footer bg-dark p-4">
+            <div class="text-center text-light">Copyright ©<span id="utc"></span> Zeru Co., Ltd. All rights reserved.</div>
+        </footer>
+    <!-- End Footer -->
+
+    <!-- START MODAL AREA -->
+
+        <!-- Start Get In Touch Modal -->
+
+            <div id="loginmodal" class="modal">
+                
+                <div class="modal-dialog modal-dialog-centered">
+
+                    <div class="modal-content bg-dark">
+                        
+                        <div class="modal-header d-flex justify-content-center ">
+                            <h5 class="modal-title text-info">Login Here</h5>
+                            <!--<button class="btn-close" data-bs-dismiss="modal"></button>-->         
+                        </div>
+
+                        <div class="modal-body bg-dark">
+                            <div class="col-12">
+                                <form action="" method="" enctype="multipart/form-data">
+                                
+                                    <!-- <div class="form-group mb-4">
+                                        <label for="loginemail">Email</label>
+                                        <input type="email" name="loginemail" id="loginemail" class="form-control form-control-sm rounded-0" placeholder="Enter your email" autocomplete="off" />
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <label for="loginpassword">Password</label>
+                                        <input type="password" name="loginpassword" id="loginpassword" class="form-control form-control-sm rounded-0" placeholder="Enter your password" autocomplete="off" />
+                                    </div>
+
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-secondary btn-sm me-3" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                                    </div> -->
+
+                                    <div class="form mb-4">
+                                        <input type="email" id="email" class="forminput" autocomplete="off" placeholder=" " required />
+                                        <label for="email" class="formlabel bg-dark">Email</label>
+                                    </div>
+
+                                    <div class="form mb-4">
+                                        <input type="password" id="password" class="forminput" autocomplete="off" placeholder=" " required />
+                                        <label for="password" class="formlabel bg-dark">Password</label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-secondary btn-sm me-3" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                                    </div>
+
+                                </form>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p><span class="text-light">Not Register !,</span> <a href="#">Sign Up Here</a></p>
+                    </div>
+
+                    </div>    
+
+                </div>
+                
+            </div>
+
+
+
+        <!-- End Get In Touch Modal -->
+
+
+        <!-- Start Desktop Setup 1 Modal -->
+        
+            <div id="desktopsetup1Modal" class="modal setupmodal">
+        
+                <span class="close" id="close">×</span>
+                <img class="modal-content" id="setupimg1">
+        
+            </div>
+        
+        <!-- End Desktop Setup 1 Modal -->
+
+        <!-- Start Desktop Setup 2 Modal -->
+        
+            <div id="desktopsetup2Modal" class="modal setupmodal">
+        
+                <span class="close" id="close1">×</span>
+                <img class="modal-content" id="setupimg2">
+        	
+            </div>
+        
+        <!-- End Pc Setup 2 Modal -->
+
+        
+        <!-- Start Pc Setup 3 Modal -->
+        
+            <div id="desktopsetup3Modal" class="modal setupmodal">
+        
+                <span class="close" id="close3">×</span>
+                <img class="modal-content" id="setupimg3">
+        
+            </div>
+        
+        <!-- End Desktop Setup 3 Modal -->
+
+        <!-- Start Desktop Accessories -->
+
+        <div id="desktopaccessoriesmodal1" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered rounded-5">
+        		
+                <div class="modal-card img-thumbnail text-center bg-dark text-light">
+                    <p>We do our best to buy these products online as soon as possible. <br/>If you have any questions, you can contact us. <br/>Thank you for your purchase.</p>
+                    <span>Hotline Phone No. <a href="tel:09761609595">09761609595</a></span><br/>
+                    <span>Office Email: <a href="mailto:info@zeru.com">info@zeru.com</a></span>
+                </div>
+
+        	
+            </div>
+
+        </div>
+
+
+        
+
+        <!-- End Desktop Accessories -->
+
+        <!-- Start Phone Accerssories1 -->
+
+        <div id="phoneaccessoriesmodal1" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="img" src="https://fv9-3.failiem.lv/thumb_show.php?i=rx9br8e6p&view" class="img-thumbnail" width="400px" height="200px" alt="laptopstand" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-3.failiem.lv/thumb_show.php?i=rx9br8e6p&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage("https://fv9-3.failiem.lv/thumb_show.php?i=rx9br8e6p&view");' alt="laptopstand" />
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=hnnu9585p&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage("https://fv9-5.failiem.lv/thumb_show.php?i=hnnu9585p&view");' alt="laptopstand" />
+                                <img src="https://fv9-4.failiem.lv/thumb_show.php?i=m7tnry2ck&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage("https://fv9-4.failiem.lv/thumb_show.php?i=m7tnry2ck&view")' alt="laptopstand" />
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ☆ 15</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">Latop Stand Phone Stand Phone Holder with Retractable Bracket Charging Dock Station for Facebook Live and Drama ဖုန်းဒေါက်တိုင် Retractable Mobile Phone Stand with Phone Holder ဖုန်းဒေါက်</p>
+
+                            <h5 class="text-info">4,600 Ks</h5>
+
+                            <button type="button" id="minus" onclick="oneminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num1" value="0"></input>
+                            <button type="button" id="plus" onclick="oneaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#" class="buynow">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories1 -->
+
+
+        <!-- Start Phone Accerssories2 -->
+
+        <div id="phoneaccessoriesmodal2" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgtwo" src="https://fv9-3.failiem.lv/thumb_show.php?i=58kp8zjck&view" class="img-thumbnail" width="400px" height="200px" alt="iphonecover" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-3.failiem.lv/thumb_show.php?i=58kp8zjck&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage2("https://fv9-3.failiem.lv/thumb_show.php?i=58kp8zjck&view");' alt="iphonecover" />
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=n5urn37cb&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage2("https://fv9-5.failiem.lv/thumb_show.php?i=n5urn37cb&view");' alt="iphonecover" />
+                                <img src="https://fv9-4.failiem.lv/thumb_show.php?i=kdc97cx7z&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage2("https://fv9-4.failiem.lv/thumb_show.php?i=kdc97cx7z&view")' alt="iphonecover" />
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ★ 20</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">SPIGEN IPhone 13 PRO 6.1 INCHES ULTRA HYBRID SERIES PHONE CASE FOR IPH 13 PRO 6.1 INCHES, IPhone 13 Series Phone Case, IPhone 13 Pro(6.1") Phone Case</p>
+
+                            <h5 class="text-info">39,500 Ks</h5>
+
+                            <button type="button" id="minus" onclick="twominusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num2" value="0"></input>
+                            <button type="button" id="plus" onclick="twoaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 2 -->
+
+        <!-- Start Phone Accerssories3 -->
+
+        <div id="phoneaccessoriesmodal3" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgthree" src="https://fv9-5.failiem.lv/thumb_show.php?i=es65u568m&view" class="img-thumbnail" width="400px" height="200px" alt="hococharger" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=es65u568m&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage3("https://fv9-5.failiem.lv/thumb_show.php?i=es65u568m&view");' alt="hococharger" />
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=v39ps3pps&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage3("https://fv9-5.failiem.lv/thumb_show.php?i=v39ps3pps&view");' alt="hococharger">
+                                <img src="https://fv9-2.failiem.lv/thumb_show.php?i=kr24ghb9c&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage3("https://fv9-2.failiem.lv/thumb_show.php?i=kr24ghb9c&view")' alt="hococharger" />
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ☆ 18</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">Hoco DC18 High charging speed 3.0A - PD - QC3.0-20W, compatible with many phone and tablet devices</p>
+
+                            <h5 class="text-info">18,000 Ks</h5>
+
+                            <button type="button" id="minus" onclick="threeminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num3" value="0"></input>
+                            <button type="button" id="plus" onclick="threeaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 3 -->
+
+
+        <!-- Start Phone Accerssories4 -->
+
+        <div id="phoneaccessoriesmodal4" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgfour" src="https://fv9-3.failiem.lv/thumb_show.php?i=jd923h5mz&view" class="img-thumbnail" width="400px" height="200px" alt="ankerchanger" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-3.failiem.lv/thumb_show.php?i=jd923h5mz&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage4("https://fv9-3.failiem.lv/thumb_show.php?i=jd923h5mz&view");' alt="ankerchanger">
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=wkp8hg3pa&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage4("https://fv9-5.failiem.lv/thumb_show.php?i=wkp8hg3pa&view");' alt="ankerchanger">
+                                <img src="https://fv9-6.failiem.lv/thumb_show.php?i=67q3em85d&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage4("https://fv9-6.failiem.lv/thumb_show.php?i=67q3em85d&view")' alt="ankerchanger" />
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ☆ 5</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">Anker Powerline+ II Lightning Cable (6ft), MFi Certified for Flawless Compatibility with iPhone Xs/XS Max/XR/X / 8/8 Plus / 7/7 Plus / 6/6 Plus / 5 / 5S and More(Black)</p>
+
+                            <h5 class="text-info">43,700 Ks</h5>
+
+                            <button type="button" id="minus" onclick="fourminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num4" value="0"></input>
+                            <button type="button" id="plus" onclick="fouraddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#" >Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories4 -->
+
+
+        <!-- Start Phone Accerssories 5 -->
+
+        <div id="phoneaccessoriesmodal5" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgfive" src="https://fv9-6.failiem.lv/thumb_show.php?i=hbwaq5yku&view" class="img-thumbnail" width="400px" height="200px" alt="remaxplug" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-6.failiem.lv/thumb_show.php?i=hbwaq5yku&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage5("https://fv9-6.failiem.lv/thumb_show.php?i=hbwaq5yku&view");' alt="remaxplug">
+                                <img src='https://fv9-1.failiem.lv/thumb_show.php?i=bxr7h3eyy&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage5("https://fv9-1.failiem.lv/thumb_show.php?i=bxr7h3eyy&view");' alt="remaxplug">
+                                <img src="https://fv9-5.failiem.lv/thumb_show.php?i=bmeekww63&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage5("https://fv9-5.failiem.lv/thumb_show.php?i=bmeekww63&view")' alt="remaxplug" />
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ★ 20</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">Remax RU-S2 Plug Ming Series 4 USB Ports Charger Socket for Mobile Phone and 3 Plug Power Strip</p>
+
+                            <h5 class="text-info">17,500 Ks</h5>
+
+                            <button type="button" id="minus" onclick="fiveminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num5" value="0"></input>
+                            <button type="button" id="plus" onclick="fiveaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 5 -->
+
+        <!-- Start Phone Accerssories 6 -->
+
+        <div id="phoneaccessoriesmodal6" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgsix" src="https://fv9-3.failiem.lv/thumb_show.php?i=3r7ybf5p3&view" class="img-thumbnail" width="400px" height="200px" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-3.failiem.lv/thumb_show.php?i=3r7ybf5p3&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage6("https://fv9-3.failiem.lv/thumb_show.php?i=3r7ybf5p3&view");'>
+                                <img src='https://fv9-3.failiem.lv/thumb_show.php?i=755m8g4vb&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage6("https://fv9-3.failiem.lv/thumb_show.php?i=755m8g4vb&view");'>
+                                <img src="https://fv9-1.failiem.lv/thumb_show.php?i=mwsfvgyxh&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage6("https://fv9-1.failiem.lv/thumb_show.php?i=mwsfvgyxh&view")'/>
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ☆ 8</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">REMAX IPhone 12 6.1 INCHES RM-1688 CRYSTAL SERIES TPU PHONE CASE FOR IPhone 12 pro max / IPhone 12 pro / IPhone 12 / IPhone 12 mini</p>
+
+                            <h5 class="text-info">3,500 Ks</h5>
+
+                            <button type="button" id="minus" onclick="sixminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num6" value="0"></input>
+                            <button type="button" id="plus" onclick="sixaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 6 -->
+
+        <!-- Start Phone Accerssories 7 -->
+
+        <div id="phoneaccessoriesmodal7" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgseven" src="https://fv9-5.failiem.lv/thumb_show.php?i=xbgpjegj4&view" class="img-thumbnail" width="400px" height="200px" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=xbgpjegj4&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage7("https://fv9-5.failiem.lv/thumb_show.php?i=xbgpjegj4&view");'>
+                                <img src='https://fv9-6.failiem.lv/thumb_show.php?i=b6d7t46sm&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage7("https://fv9-6.failiem.lv/thumb_show.php?i=b6d7t46sm&view");'>
+                                <img src="https://fv9-1.failiem.lv/thumb_show.php?i=wa685sn2t&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage7("https://fv9-1.failiem.lv/thumb_show.php?i=wa685sn2t&view")'/>
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ★ 60</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">GADGET MAX 10000mAh NEW RAY POWER BANK 10000mAh(5V/2.1A)(OUTPUT-2USB/INPUT-MICRO,TYPE-C), 10000 MAh Power Bank, All-In-One Power Bank</p>
+
+                            <h5 class="text-info">21,000 Ks</h5>
+
+                            <button type="button" id="minus" onclick="sevenminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num7" value="0"></input>
+                            <button type="button" id="plus" onclick="sevenaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 7 -->
+
+
+        <!-- Start Phone Accerssories 8 -->
+
+        <div id="phoneaccessoriesmodal8" class="modal">
+        	
+            <div class="modal-dialog modal-dialog-centered ">
+        		
+                <div class="modal-content">
+                        
+                    <div class="modal-header d-flex justify-content-center ">
+
+                        <div id="main_img">
+        						
+                                <img id="imgeight" src="https://fv9-2.failiem.lv/thumb_show.php?i=2z49n5tcg&view" class="img-thumbnail" width="400px" height="200px" />
+    				
+                        </div>      
+                   
+                    </div>
+                   
+                    <div class="modal-body">
+                   
+                        <div class="col-12">
+
+                            <div id="thumb_img">
+        			
+                                <img src='https://fv9-2.failiem.lv/thumb_show.php?i=2z49n5tcg&view' width="50px" height="50px" class="img-thumbnail" onclick='changeImage8("https://fv9-2.failiem.lv/thumb_show.php?i=2z49n5tcg&view");'>
+                                <img src='https://fv9-5.failiem.lv/thumb_show.php?i=mnc8hs934&view' width="50px" height="50px" class="img-thumbnail"  onclick='changeImage8("https://fv9-5.failiem.lv/thumb_show.php?i=mnc8hs934&view");'>
+                                <img src="https://fv9-2.failiem.lv/thumb_show.php?i=bdfpk25ej&view" width="50px" height="50px" class="img-thumbnail" onclick='changeImage8("https://fv9-2.failiem.lv/thumb_show.php?i=bdfpk25ej&view")'/>
+                            </div>
+
+                            <a href="#" class="review"><p style="font-size: 12px" class="mt-2">★ ★ ★ ★ ★ 30</p></a>
+
+                            <h6>Details</h6>
+                            <p style="font-size:10px">REMAX RPP-112 30000MAH MENGINE SERIES POWER BANK,PowerBank 30000mAh,30000mAhpowerbank , Power Bank 30000mAh ,Safest Power Bank , Best Power Bank For IPhone , Android , Xiaomi , Samsung , Huawei , All In One</p>
+
+                            <h5 class="text-info">53,500 Ks</h5>
+
+                            <button type="button" id="minus" onclick="eightminusbuttonClick()">-</button>
+                            <input type="text" class="addnum text-center mb-3" id="num8" value="0"></input>
+                            <button type="button" id="plus" onclick="eightaddbuttonClick()">+</button>
+
+                            <div class="pa-a d-flex justify-content-between">
+                                <a href="#">Add to Cart</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                   	
+                        </div>
+                   	
+                    </div>
+                
+                </div>
+        	
+            </div>
+
+        </div>
+        <!-- End Phone Accessories 8 -->
+
+        <!--Start buynow for banner -->
+
+            <div id="buynow" class="modal">
+
+                <div class="modal-dialog modal-dialog-centered">
+        			
+                    <div class="modal-content bns">
+        				
+                        <div class="modal-image d-flex justify-content-center bnis">
+                            <img src="https://resource.logitechg.com/d_transparent.gif/content/dam/gaming/en/products/pro-x/pro-headset-gallery-1.png" width="600px" height="400px"  class="mt-5">
+                        </div>
+
+                        <div class="modal-body bnbs">
+                            <p>Logitech PRO Gaming Headset</p>
+                            <div class="shipping">
+
+                                <h6>SHIPPING:</h6>
+                                <form action="" method="" autocomplete="multipart/form-data">
+                                    <div class="shipdiv">
+                                        <input type="radio" id="land" name="ship" class="land" />
+                                        <input type="radio" id="air" name="ship" class="air" />
+                                        <input type="radio" id="sea" name="ship" class="sea" />
+                                    </div>
+                                </form>
+
+                            </div> 
+
+                            <div class="color">
+
+                                <h6>COLOR :</h6>
+                                <form action="" method="">
+                                    <input type="radio" id="black" class="cl" name="color" />
+                                    <input type="radio" id="white" class="cl" name="color" />
+                                </form>
+                            </div>
+                            <a href="#" class="sbns mb-3">Buy Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        <!-- End buynow for banner -->
+
+    <!-- END MODAL AREA -->
+	<script src="../globaljs/index.js"></script>
+    <script type="text/javascript">
+
+
+
+        // For Navbar
+
+        // var prevScrollpos = window.pageYOffset;
+        // window.onscroll = function() {
+        //     var currentScrollPos = window.pageYOffset;
+        //     if (prevScrollpos > currentScrollPos){
+        //         document.getElementById("navbar").style.top = "0";
+        //     } else {
+        //         document.getElementById("navbar").style.top = "-120px";
+        //     }
+        //     prevScrollpos = currentScrollPos;
+        // }
+        // For Navbar
+    	
+        //Start Pc Setup 1 img Modal
+            // Get the modal
+            var modal = document.getElementById('desktopsetup1Modal');
+
+            //Get the image and insert it inside the model -use its
+            var img= document.getElementById("desktopsetup1Img");
+            var modalImg= document.getElementById("setupimg1");
+            img.onclick = function() {
+                modal.style.display ="block";
+                modalImg.src = this.src;
+            }
+
+            //Get the <span> element that closes the modal
+            var span =document.getElementById("close");
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        // End Pc Setup 1 img Modal
+
+        //Start Pc Setup 2 img Modal
+            var modal = document.getElementById('desktopsetup2Modal');
+
+            var img= document.getElementById("desktopsetup2Img");
+            var modalImg= document.getElementById("setupimg2");
+            img.onclick = function() {
+                modal.style.display ="block";
+                modalImg.src = this.src;
+            }
+
+            //Get the <span> element that closes the modal
+            var span =document.getElementById("close1");
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        // End Pc Setup 2 img Modal
+
+        //Start Pc Setup 3 img Modal
+            var modal = document.getElementById('desktopsetup3Modal');
+
+            var img= document.getElementById("desktopsetup3Img");
+            var modalImg= document.getElementById("setupimg3");
+            img.onclick = function() {
+                modal.style.display ="block";
+                modalImg.src = this.src;
+            }
+
+            //Get the <span> element that closes the modal
+            var span =document.getElementById("close3");
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        // End Pc Setup 3 img Modal
+
+        // Start Phone Accessories
+
+        function changeImage(a) {
+            document.getElementById("img").src=a;
+        }
+        function changeImage2(b){
+            document.getElementById("imgtwo").src =b;
+        }
+        function changeImage3(c){
+            document.getElementById("imgthree").src=c;
+        }
+        function changeImage4(d){
+            document.getElementById("imgfour").src=d;
+        }
+        function changeImage5(e){
+            document.getElementById("imgfive").src=e;
+        }
+        function changeImage6(f){
+            document.getElementById('imgsix').src=f;
+        }
+        function changeImage7(g){
+            document.getElementById('imgseven').src=g;
+        }
+        function changeImage8(h){
+            document.getElementById("imgeight").src=h;
+        }
+
+    	
+    
+        // Start phoneaccessoriesmodal1
+            var num1 = 0;
+            function oneaddbuttonClick() {
+                if (num1 < 20 ) {
+                    num1++;
+                }
+                else if(num1 =20){
+                    num1 =20;
+                }
+                document.getElementById("num1").value = num1;
+            }
+            function oneminusbuttonClick(){
+                if(num1>0){
+                    num1--;
+                }
+                document.getElementById("num1").value = num1;
+            }
+        // End phoneaccessoriesmodal1
+
+        // Start phoneaccessoriesmodal2
+
+            var num2 = 0;
+            function twoaddbuttonClick() {
+                if (num2 < 30 ) {
+                    num2++;
+                }
+                else if(num2 =30){
+                    num2 =30;
+                }
+                document.getElementById("num2").value = num2;
+            }
+            function twominusbuttonClick(){
+                if(num2>0){
+                    num2--;
+                }
+                document.getElementById("num2").value = num2;
+            }
+
+        // End phoneaccessoriesmodal2
+
+        // Start phoneaccessoriesmodal 3
+
+            var num3 = 0;
+            function threeaddbuttonClick() {
+                if (num3 < 35 ) {
+                    num3++;
+                }
+                else if(num3 =35){
+                    num3 =35;
+                }
+                document.getElementById("num3").value = num3;
+            }
+            function threeminusbuttonClick(){
+                if(num3>0){
+                    num3--;
+                }
+                document.getElementById("num3").value = num3;
+            }
+
+        // End phoneaccessoriesmodal 3
+
+        // Start phoneaccessoriesmodal 4
+
+            var num4 = 0;
+            function fouraddbuttonClick() {
+                if (num4 < 20 ) {
+                    num4++;
+                }
+                else if(num4 =20){
+                    num4 =20;
+                }
+                document.getElementById("num4").value = num4;
+            }
+            function fourminusbuttonClick(){
+                if(num4>0){
+                    num4--;
+                }
+                document.getElementById("num4").value = num4;
+            }
+
+        // End phoneaccessoriesmodal 4
+
+        // Start phoneaccessoriesmodal 5
+
+            var num5 = 0;
+            function fiveaddbuttonClick() {
+                if (num5 < 15 ) {
+                    num5++;
+                }
+                else if(num5 =15){
+                    num5 =15;
+                }
+                document.getElementById("num5").value = num5;
+            }
+            function fiveminusbuttonClick(){
+                if(num5>0){
+                    num5--;
+                }
+                document.getElementById("num5").value = num5;
+            }
+
+        // End phoneaccessoriesmodal 5
+
+        // Start phoneaccessoriesmodal 6
+
+            var num6 = 0;
+            function sixaddbuttonClick() {
+                if (num6 < 30 ) {
+                    num6++;
+                }
+                else if(num6 =30){
+                    num6 =30;
+                }
+                document.getElementById("num6").value = num6;
+            }
+            function sixminusbuttonClick(){
+                if(num6>0){
+                    num6--;
+                }
+                document.getElementById("num6").value = num6;
+            }
+
+        // End phoneaccessoriesmodal 6
+
+        // Start phoneaccessoriesmodal 7
+
+            var num7 = 0;
+            function sevenaddbuttonClick() {
+                if (num7 < 15 ) {
+                    num7++;
+                }
+                else if(num7 =15){
+                    num7 =15;
+                }
+                document.getElementById("num7").value = num7;
+            }
+            function sevenminusbuttonClick(){
+                if(num7>0){
+                    num7--;
+                }
+                document.getElementById("num7").value = num7;
+            }
+
+        // End phoneaccessoriesmodal 7
+
+        // Start phoneaccessoriesmodal 8
+
+            var num8 = 0;
+            function eightaddbuttonClick() {
+                if (num8 < 15 ) {
+                    num8++;
+                }
+                else if(num8 =15){
+                    num8 =15;
+                }
+                document.getElementById("num8").value = num8;
+            }
+            function eightminusbuttonClick(){
+                if(num8>0){
+                    num8--;
+                }
+                document.getElementById("num8").value = num8;
+            }
+
+        // End phoneaccessoriesmodal 8
+
+        // End Phone Accessories
+
+        // Start Footer 
+            var utcyear = new Date().getUTCFullYear();
+
+            document.getElementById('utc').innerHTML=utcyear;
+        // End Footer
+
+        // Start Scroll for left side 
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 5;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } 
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+
+
+        // End Scroll for left side
+
+
+        // Start Scroll for right side 
+
+        function reveal1() {
+            var reveals = document.querySelectorAll(".reveal1");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 5;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } 
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal1);
+
+        // End Scroll for left side
+
+    	
+
+    </script>
+
+    <!--bootstrap css1 js2-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    
+
+
+
+</body>
+</html>
