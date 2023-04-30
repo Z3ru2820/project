@@ -9,6 +9,9 @@
 
 /* Google font */
 
+/**{
+    scroll-behavior: smooth;
+}*/
 
 .container-fluid{
     margin: 0;
@@ -39,6 +42,7 @@ footer div div p a:hover{
     }
 }
 /* End Footer */
+
 
 
 
